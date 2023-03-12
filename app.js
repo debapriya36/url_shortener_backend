@@ -9,7 +9,11 @@ app.use(express.json());
 
 
 app.use('/',require('./routes/url'));
-
+app.get('/',(req,res)=>{
+    res.json({
+        message : "Welcome to URL Shortner"
+    });
+});
 
 
 
