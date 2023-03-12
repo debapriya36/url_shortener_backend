@@ -9,7 +9,7 @@ const generateShortUrl=async (req,res)=>{
             err : "URL is required"
         });
     }
-    const shortId=nanoid(6);
+    const shortId=nanoid(6); // returns 6-digit unique id
     const data=await URL.create({
         shortId,
         redirectURL ,
